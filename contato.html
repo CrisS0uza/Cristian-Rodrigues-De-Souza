@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container{
+            display: grid;
+        }
+
+        header{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #FFC222;
+        }
+
+        .menu{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            justify-content: center; /*centraliza o menu*/
+            gap: 20px;
+        }
+
+    
+        .principal{
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+
+        footer{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #FFC222;
+            color: #FFC222;
+            text-align: center;
+        }
+
+        ul{
+            list-style-type: none;
+            color: bisque;
+        }
+
+        a,
+        a:link{
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid bisque 1px;
+            color:indianred;
+
+        }
+
+        li{
+            float: left;
+            
+        }
+
+        a:hover{
+            background-color: #FFC222;
+            color: white;
+        }
+
+        .inputs{
+            padding-left: 25px;
+            padding-top: 100px;
+        }
+        
+
+        /* media query para dispositivos móveis*/
+        @media only screen and(max-width: 767px){
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal{
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Formação </h1>
+        <br>
+
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Sobre mim</a></li>
+            <li><a href="formação.html">Formação</a></li>
+            <li><a href="portfólio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+<div class="inputs">
+    Digite seu nome:  <input type="text">
+    <br><br>
+    Digite seu E-mail: <input type="email">
+    <br><br>
+    Deixe uma mensagem: <input type="text">
+</div>
+
+<br><br>
+<a href="https://www.linkedin.com/in/cristian-rodrigues-52296022a/">Linkedin</a>
+<a href="https://github.com/CrisS0uza">Github</a>
+</body>
+</html>

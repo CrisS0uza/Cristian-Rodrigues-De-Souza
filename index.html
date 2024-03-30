@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container{
+            display: grid;
+        }
+
+        /* Estilo do menu*/
+
+        header{ 
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #FFC222;
+        }
+
+        .menu{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            justify-content: center; /*centraliza o menu*/
+            gap: 20px;
+        }
+
+        /*Estilo da imagem*/
+
+        .imagem{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    
+        .principal{
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        /*Estilo do rodapé */
+
+
+        footer{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #FFC222;
+            color: white;
+            text-align: center;
+        }
+
+        /* estilo dos elementos do menu */
+        
+        ul{
+            list-style-type: none;
+            color: bisque;
+        }
+
+        a,
+        a:link{
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid bisque 1px;
+            color:indianred;
+
+        }
+
+        li{
+            float: left;
+            
+        }
+
+        a:hover{
+            background-color: #FFC222;
+            color: white;
+        }
+
+        .wrapper{
+            position: relative;
+            left: 15px;
+        }
+
+
+        /* media query para dispositivos móveis*/
+        @media only screen and(max-width: 767px){
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imagem{
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Sobre mim </h1>
+        <br>
+
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Sobre mim</a></li>
+            <li><a href="formação.html">Formação</a></li>
+            <li><a href="portfólio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem">
+            <img src="eu.jpg">
+
+
+        </aside>
+        <section class="principal">
+            <h1>
+                Sobre mim
+            </h1>
+            Me chamo Cristian, tenho 21 anos e atualmente estou cursando análise e desenvolvimento de sistemas na Uninter.
+            <br>
+            Meus hobbies são música, leitura, jogos e considero a programação algo divertido de se tratar em meu tempo livre.
+            <br><br>
+            Pretendo me expecializar em back-end, mais expecificamente em banco de dados.
+        </section>
+        <br><br>
+    </div>
+    <footer class="container">
+        <h1>Desenvolvido por Cristian Rodrigues</h1>
+
+    </footer>
+</body>
+</html>
